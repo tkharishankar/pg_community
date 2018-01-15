@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">pg_community_android</string>
+
+
+    <!--Title string-->
+    <string name="title_login">Login</string>
+    <string name="title_register">Register</string>
+
+    <!--App Message-->
+    <string name="api_retry_error">Please retry!</string>
+    <string name="api_default_error">Something wrong happened!</string>
+    <string name="some_error">Some Error Occurred!</string>
+    <string name="connection_error">Internet connection lost!</string>
+    <string name="app_market_link">not yet</string>
+    <string name="app_google_play_store_link">not yet</string>
+
+    <!--Login Page-->
+    <string name="prompt_password">Enter your password</string>
+    <string name="prompt_email">Enter your e-mail</string>
+    <string name="action_sign_in_short">Done</string>
+    <string name="action_sign_in">Login</string>
+    <string name="empty_email">Please enter your mail id</string>
+    <string name="invalid_email">The mail id you entered is invalid</string>
+    <string name="empty_password">Please enter your password</string>
+
+    <!--Register Page-->
+    <string name="action_register">Register</string>
+    <string name="user_name">Name</string>
+    <string name="user_surname">Surname</string>
+    <string name="prompt_confirm_password">Confirm password</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+
+    <string name="empty_name">Please enter your name</string>
+    <string name="empty_surname">Please enter your surname</string>
+    <string name="empty_confirm_password">Please enter your confirm password</string>
+    <string name="empty_password_mismatch">Please make sure your password and confirm password are same.</string>
+
+
+</resources>

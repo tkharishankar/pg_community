@@ -1,11 +1,13 @@
 package com.pg_community_android.functionalities.register;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
 import com.pg_community_android.R;
 import com.pg_community_android.base.BaseActivity;
+import com.pg_community_android.functionalities.profile.ProfileActivity;
 
 import javax.inject.Inject;
 
@@ -46,6 +48,8 @@ public class RegisterActivity extends BaseActivity implements RegisterView {
         setUnBinder(ButterKnife.bind(this));
         mPresenter.onAttach(RegisterActivity.this);
         getSupportActionBar().setTitle(getResources().getString(R.string.title_register));
+        hideKeyboard();
+
     }
 
 
@@ -56,6 +60,11 @@ public class RegisterActivity extends BaseActivity implements RegisterView {
                 mEmailEditText.getText().toString().trim(),
                 mPasswordEditText.getText().toString().trim(),
                 mConfirmPasswordEditText.getText().toString().trim());
+
+        Intent intent = new Intent(this, ProfileActivity.class);
+        startActivity(intent);
+        finish();
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
     }
 
     @Override

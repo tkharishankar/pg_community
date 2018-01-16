@@ -7,4 +7,5 @@ import com.pg_community_android.base.CommonView;
  */
 
 public interface RegisterView extends CommonView {
+
 }

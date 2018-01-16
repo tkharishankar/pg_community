@@ -26,7 +26,11 @@
 
         <activity
             android:name=".functionalities.register.RegisterActivity"
-            android:configChanges="orientation|keyboard|keyboardHidden|navigation|screenSize"/>
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation|screenSize" />
+
+        <activity
+            android:name=".functionalities.profile.ProfileActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation|screenSize" />
 
     </application>
 </manifest>

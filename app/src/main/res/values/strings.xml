@@ -5,6 +5,7 @@
     <!--Title string-->
     <string name="title_login">Login</string>
     <string name="title_register">Register</string>
+    <string name="title_profile">Profile</string>
 
     <!--App Message-->
     <string name="api_retry_error">Please retry!</string>
@@ -35,6 +36,15 @@
     <string name="empty_surname">Please enter your surname</string>
     <string name="empty_confirm_password">Please enter your confirm password</string>
     <string name="empty_password_mismatch">Please make sure your password and confirm password are same.</string>
+    <string name="father_name">Father name</string>
+    <string name="mother_name">Mother name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="native_place">Native place</string>
+    <string name="native_city">Native city</string>
+    <string name="current_city">Current city</string>
+    <string name="current_state">Current state</string>
+    <string name="current_country">Current country</string>
+    <string name="action_save">Save</string>
 
 
 </resources>

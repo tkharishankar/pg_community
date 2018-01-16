@@ -44,6 +44,7 @@ public class LoginActivity extends BaseActivity implements LoginView {
         setUnBinder(ButterKnife.bind(this));
 
         mPresenter.onAttach(LoginActivity.this);
+
         getSupportActionBar().setTitle(getResources().getString(R.string.title_login));
     }
 
@@ -55,9 +56,12 @@ public class LoginActivity extends BaseActivity implements LoginView {
 
     @OnClick(R.id.sign_up_button)
     void onSignupClick(View v) {
+        hideKeyboard();
         Intent intent = LoginActivity.getStartIntent(LoginActivity.this);
         startActivity(intent);
         finish();
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+
     }
 
     @Override

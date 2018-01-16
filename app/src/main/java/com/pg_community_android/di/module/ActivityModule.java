@@ -9,6 +9,9 @@ import com.pg_community_android.di.PerActivity;
 import com.pg_community_android.functionalities.login.LoginPresenter;
 import com.pg_community_android.functionalities.login.LoginPresenterImpl;
 import com.pg_community_android.functionalities.login.LoginView;
+import com.pg_community_android.functionalities.profile.ProfilePresenter;
+import com.pg_community_android.functionalities.profile.ProfilePresenterImpl;
+import com.pg_community_android.functionalities.profile.ProfileView;
 import com.pg_community_android.functionalities.register.RegisterPresenter;
 import com.pg_community_android.functionalities.register.RegisterPresenterImpl;
 import com.pg_community_android.functionalities.register.RegisterView;
@@ -61,6 +64,13 @@ public class ActivityModule {
     @PerActivity
     RegisterPresenter<RegisterView> provideRegisterPresenter(
             RegisterPresenterImpl<RegisterView> presenter) {
+        return presenter;
+    }
+
+    @Provides
+    @PerActivity
+    ProfilePresenter<ProfileView> provideProfilePresenter(
+            ProfilePresenterImpl<ProfileView> presenter) {
         return presenter;
     }
 

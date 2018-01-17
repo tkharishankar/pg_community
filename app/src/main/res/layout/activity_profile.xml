@@ -5,6 +5,12 @@
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
+    <include
+        android:id="@+id/mToolBar"
+        layout="@layout/view_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <!-- Login progress -->
     <ProgressBar
         android:id="@+id/login_progress"
@@ -13,6 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:visibility="gone" />
+
 
     <ScrollView
         android:id="@+id/profile_form"

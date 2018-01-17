@@ -47,4 +47,10 @@
     <string name="action_save">Save</string>
 
 
+
+    <string name="version">Version:</string>
+    <string name="home">home</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+
 </resources>

@@ -4,6 +4,7 @@ package com.pg_community_android.functionalities.login;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.EditText;
 
@@ -29,6 +30,9 @@ public class LoginActivity extends BaseActivity implements LoginView {
     @BindView(R.id.password)
     EditText mPasswordEditText;
 
+    @BindView(R.id.mToolBar)
+    public Toolbar mToolbar;
+
     public static Intent getStartIntent(Context context) {
         Intent intent = new Intent(context, RegisterActivity.class);
         return intent;
@@ -44,6 +48,8 @@ public class LoginActivity extends BaseActivity implements LoginView {
         setUnBinder(ButterKnife.bind(this));
 
         mPresenter.onAttach(LoginActivity.this);
+
+        setSupportActionBar(mToolbar);
 
         getSupportActionBar().setTitle(getResources().getString(R.string.title_login));
     }

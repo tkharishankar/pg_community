@@ -2,6 +2,7 @@ package com.pg_community_android.functionalities.register;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.EditText;
 
@@ -39,6 +40,9 @@ public class RegisterActivity extends BaseActivity implements RegisterView {
     @BindView(R.id.confrim_password)
     EditText mConfirmPasswordEditText;
 
+    @BindView(R.id.mToolBar)
+    public Toolbar mToolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +51,7 @@ public class RegisterActivity extends BaseActivity implements RegisterView {
         getActivityComponent().inject(this);
         setUnBinder(ButterKnife.bind(this));
         mPresenter.onAttach(RegisterActivity.this);
+        setSupportActionBar(mToolbar);
         getSupportActionBar().setTitle(getResources().getString(R.string.title_register));
         hideKeyboard();
 

@@ -101,8 +101,6 @@ R
 "app/src/main/res/values/styles.xml,f/7/f79cc2688e29fcbc286fda14ae07b27c9e83690f
 Ž
 ^app/src/main/java/com/pg_community_android/functionalities/register/RegisterPresenterImpl.java,1/f/1fb6bdee8502819948917cf61506926823eeb6dd
-]
--app/src/main/res/transition/activity_fade.xml,5/5/5579b0ad5d948c7780a3ccaa5ad47301de2f2c53
 ˆ
 Xapp/src/main/java/com/pg_community_android/functionalities/login/LoginPresenterImpl.java,6/5/6540547f8fb7f36f4e12273f6d123125d95cd03b
 o
@@ -137,8 +135,6 @@ A
 gradle.properties,2/a/2afbb999f001938c88fa43fc2ef52abf0f8213e4
 d
 4app/src/main/res/drawable/ic_launcher_background.xml,4/9/49845c622cb06d895975c7b1e3f943e320bce688
-^
-.app/src/main/res/transition/activity_slide.xml,9/a/9a77d3efc71fadcbcf806c409758ab1b3a01f823
 ~
 Napp/src/androidTest/java/com/pg_community_android/ExampleInstrumentedTest.java,2/1/21798c66247d6d2309561a1ff8197a6aea5c65db
 ;
@@ -148,3 +144,39 @@ R
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+Q
+!app/src/main/res/anim/fadeout.xml,6/4/642b02d561129ba6758c81d88e47d32a92974317
+Œ
+\app/src/main/java/com/pg_community_android/functionalities/profile/ProfilePresenterImpl.java,1/b/1b3a3b512ba76ed5aa062fd67afa0c9503d9f4ff
+P
+ app/src/main/res/anim/fadein.xml,0/1/01456fbc1690837f1d4180798243b8d90a1804d7
+ƒ
+Sapp/src/main/java/com/pg_community_android/functionalities/profile/ProfileView.java,5/9/59af8424c667cddc1a7b1f33545947defbf2f0c2
+ˆ
+Xapp/src/main/java/com/pg_community_android/functionalities/profile/ProfilePresenter.java,7/e/7ec11b20e8a60602751a5f558421083fe77e54d3
+X
+(app/src/main/res/drawable/txt_ripple.xml,1/a/1a21e10a1f075c1a5e88e8d5adf80cc4ab974e66
+{
+Kapp/src/main/java/com/pg_community_android/functionalities/MenuAdapter.java,1/b/1b9679ff53f90c0f4a88623fb50cc7475f39fc93
+‡
+Wapp/src/main/java/com/pg_community_android/functionalities/profile/ProfileActivity.java,e/3/e392199e568d0e6f963a9247cb44b11bfa124b7e
+`
+0app/src/main/res/drawable/ic_info_black_24px.xml,c/1/c11749b2e9ff14b9d06a267da0c09542c8fbaa00
+Y
+)app/src/main/res/layout/view_tool_bar.xml,9/1/91ac2348b26cbf5dbd47da6c34af3215e978f53b
+|
+Lapp/src/main/java/com/pg_community_android/functionalities/HomeActivity.java,a/8/a8760bbe5f8a3cdd10798744a8bf246d9a657dfb
+}
+Mapp/src/main/java/com/pg_community_android/functionalities/PgMenuAdapter.java,1/c/1c13d5702e6ce5095b45fed5066296598ced8ba5
+`
+0app/src/main/res/drawable/ic_lock_black_24px.xml,8/f/8f847c97c27d909b199c8ca809e5cf1a94c71396
+`
+0app/src/main/res/drawable/ic_home_black_24px.xml,9/b/9bdd05f2a8528967da258bc99a98f32c228a1bfb
+b
+2app/src/main/res/layout/adapter_dashboard_menu.xml,a/5/a5e7573f98337f7524199545a0653980e2d3371f
+\
+,app/src/main/res/layout/activity_profile.xml,4/f/4feb8df09bb6546108e9d5489cd9c002981d116c
+W
+'app/src/main/res/layout/drawer_home.xml,0/f/0f3faf90ba834885cdf4bf36e21f19e78532e9c6
+|
+Lapp/src/main/java/com/pg_community_android/functionalities/HomeContract.java,3/2/323b17c5bfb1997121bb67828a487c182ac180df

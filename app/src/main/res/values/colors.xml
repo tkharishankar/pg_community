@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">@color/pg_green</color>
+    <color name="colorPrimaryDark">@color/pg_green</color>
+    <color name="colorAccent">@color/pg_green</color>
 
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
+
+    <color name="pg_orange">#F27835</color>
+    <color name="pg_green">#1FBBA6</color>
+    <color name="pg_blue">#14B9D5</color>
+    <color name="pg_grey">#323A45</color>
 
 </resources>

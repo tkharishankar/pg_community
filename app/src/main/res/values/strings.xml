@@ -26,6 +26,8 @@
 
     <!--Register Page-->
     <string name="action_register">Register</string>
+    <string name="action_forgot_password">Forgot Password?</string>
+    <string name="action_stay_logged">Stay logged in</string>
     <string name="user_name">Name</string>
     <string name="user_surname">Surname</string>
     <string name="prompt_confirm_password">Confirm password</string>
@@ -51,6 +53,7 @@
     <string name="version">Version:</string>
     <string name="home">home</string>
     <string name="about">About</string>
+    <string name="matrimony">Matrimony</string>
     <string name="logout">Logout</string>
 
 </resources>

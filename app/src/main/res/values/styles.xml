@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="windowActionBar">false</item>
+        <item name="colorControlNormal">@color/white</item>
         <item name="windowNoTitle">true</item>
     </style>
 
@@ -25,4 +26,22 @@
     <style name="TextAppearance.Text.Italic" parent="android:TextAppearance">
         <item name="fontPath">fonts/source-sans-pro/SourceSansPro-Italic.ttf</item>
     </style>
+
+    <style name="Button_orange">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/button_custom</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CheckBoxTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/pg_orange</item>
+        <item name="colorControlActivated">@color/pg_green</item>
+    </style>
+
+    <style name="toolbar_icon_color" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
 </resources>
+

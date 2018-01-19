@@ -73,6 +73,9 @@ public class ProfileActivity extends HomeActivity implements ProfileView {
     @BindView(R.id.profileNameTextView)
     public TextView mTxtDriverName;
 
+    @BindView(R.id.profileContactNumberTextView)
+    public TextView profileContactNumberTextView;
+
     @BindView(R.id.mToolBar)
     public Toolbar mToolbar;
 
@@ -189,6 +192,12 @@ public class ProfileActivity extends HomeActivity implements ProfileView {
 
     @NonNull
     @Override
+    protected TextView provideprofileContactNumberTextView() {
+        return profileContactNumberTextView;
+    }
+
+    @NonNull
+    @Override
     protected DrawerLayout provideDrawerLayout() {
         return mDrawerLayout;
     }
@@ -208,12 +217,12 @@ public class ProfileActivity extends HomeActivity implements ProfileView {
 
     private PgMenuAdapter.PgMenuAdapterCallBack mMenuAdapterCallback = new PgMenuAdapter.PgMenuAdapterCallBack() {
         @Override
-        public void home() {
+        public void profile() {
             closeNavigationDrawer();
         }
 
         @Override
-        public void about() {
+        public void matrimony() {
             //TODO : go to about screen
         }
 

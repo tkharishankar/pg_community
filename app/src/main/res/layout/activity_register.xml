@@ -27,6 +27,7 @@
 
         <LinearLayout
             android:id="@+id/email_login_form"
+            android:layout_margin="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -116,12 +117,11 @@
 
             <Button
                 android:id="@+id/register_button"
-                style="?android:textAppearanceSmall"
+                style="@style/Button_orange"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/action_register"
-                android:textStyle="bold" />
+                android:text="@string/action_register" />
 
         </LinearLayout>
     </ScrollView>

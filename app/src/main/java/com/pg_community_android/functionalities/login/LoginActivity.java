@@ -70,6 +70,12 @@ public class LoginActivity extends BaseActivity implements LoginView {
 
     }
 
+    @OnClick(R.id.forgot_button)
+    void onForgotpasswordClick(View v) {
+        mPresenter.onServerLoginClick(mEmailEditText.getText().toString(),
+                mPasswordEditText.getText().toString());
+    }
+
     @Override
     public void openMainActivity() {
         Intent intent = LoginActivity.getStartIntent(LoginActivity.this);

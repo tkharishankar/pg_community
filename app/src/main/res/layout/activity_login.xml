@@ -25,10 +25,10 @@
         android:id="@+id/email_login_form"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_gravity="center"
+        android:layout_below="@+id/mToolBar"
+        android:layout_gravity="top|center"
         android:layout_margin="10dp"
-        android:gravity="center"
+        android:gravity="top|center"
         android:orientation="vertical">
 
 
@@ -87,26 +87,30 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+            <CheckBox
+                android:id="@+id/forgot_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/action_stay_logged"
+                android:textColor="@color/pg_orange"
+                android:textSize="15sp"
+                android:theme="@style/CheckBoxTheme" />
+
             <TextView
                 android:id="@+id/sign_up_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:layout_weight="1"
-                android:textColor="@color/pg_orange"
-                android:textSize="15sp"
-                android:text="@string/action_register" />
-
-            <TextView
-                android:id="@+id/forgot_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:gravity="right"
-                android:layout_weight="1"
+                android:linksClickable="true"
+                android:text="@string/action_register"
                 android:textColor="@color/pg_orange"
-                android:textSize="15sp"
-                android:text="@string/action_forgot_password" />
+                android:textSize="15sp" />
+
 
         </LinearLayout>
 

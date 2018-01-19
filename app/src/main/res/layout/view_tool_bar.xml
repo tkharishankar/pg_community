@@ -7,5 +7,5 @@
     android:background="@color/colorPrimary"
     android:elevation="4dp"
     app:titleTextColor="@color/white"
-    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    android:theme="@style/toolbar_icon_color"
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />

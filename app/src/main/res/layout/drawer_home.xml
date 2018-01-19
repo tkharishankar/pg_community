@@ -29,13 +29,13 @@ android:layout_below="@+id/LayToolbar">
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="start"
-    android:background="@color/white"
     android:clickable="true">
 
     <RelativeLayout
         android:id="@+id/headerRelativeLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/pg_green"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true">
 
@@ -91,7 +91,7 @@ android:layout_below="@+id/LayToolbar">
     <android.support.v7.widget.RecyclerView
         android:id="@+id/menu_recycler"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@id/headerRelativeLayout"
         android:background="@color/white" />
 

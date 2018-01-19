@@ -22,7 +22,7 @@ public abstract class HomeActivity extends BaseActivity {
     private ActionBarDrawerToggle mToggle;
 
     /**
-     *  this method have to be call after the toolbar initialisation
+     * this method have to be call after the toolbar initialisation
      */
     protected void initNavigationDrawer() {
         mToggle = new ActionBarDrawerToggle(this, provideDrawerLayout(), provideToolbar(), R.string.app_name, R.string.app_name) {
@@ -38,15 +38,14 @@ public abstract class HomeActivity extends BaseActivity {
         provideToolbar().setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (provideDrawerLayout().isDrawerOpen(Gravity.LEFT)){
+                if (provideDrawerLayout().isDrawerOpen(Gravity.LEFT)) {
                     closeNavigationDrawer();
                 } else {
                     openNavigationDrawer();
                 }
             }
         });
-        provideTextViewVersion().setText("");
-
+        provideprofileContactNumberTextView().setText("Harishankar Kathirvel");
         providerRecyclerViewDrawer().setLayoutManager(new GridLayoutManager(this, 1));
         providerRecyclerViewDrawer().setAdapter(provideMenuAdapter());
     }
@@ -78,7 +77,11 @@ public abstract class HomeActivity extends BaseActivity {
     protected abstract @NonNull
     TextView provideTextViewDriverName();
 
-    protected abstract @NonNull TextView provideTextViewVersion();
+    protected abstract @NonNull
+    TextView provideTextViewVersion();
+
+    @NonNull
+    protected abstract TextView provideprofileContactNumberTextView();
 
     protected abstract @NonNull
     DrawerLayout provideDrawerLayout();
@@ -86,6 +89,7 @@ public abstract class HomeActivity extends BaseActivity {
     protected abstract @NonNull
     Toolbar provideToolbar();
 
-    protected abstract @NonNull RecyclerView.Adapter provideMenuAdapter();
+    protected abstract @NonNull
+    RecyclerView.Adapter provideMenuAdapter();
 }
 

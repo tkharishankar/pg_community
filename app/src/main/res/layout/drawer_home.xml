@@ -67,8 +67,9 @@ android:layout_below="@+id/LayToolbar">
             android:layout_marginTop="25dp"
             android:layout_toRightOf="@+id/profileImageView"
             android:padding="5dp"
+            android:lines="2"
             android:textColor="@color/white"
-            android:textSize="17sp"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
 
@@ -77,13 +78,12 @@ android:layout_below="@+id/LayToolbar">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/profileNameTextView"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@+id/profileImageView"
             android:layoutDirection="ltr"
             android:padding="5dp"
             android:textColor="@color/white"
-            android:textSize="15sp" />
+            android:textSize="25sp" />
 
 
     </RelativeLayout>

@@ -1,4 +1,4 @@
-package com.pg_community_android.functionalities.matrimony;
+package com.pg_community_android.functionalities.jobs;
 
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -15,11 +15,10 @@ import butterknife.ButterKnife;
  * Created by Hari on 1/20/18.
  */
 
-public class MatrimonyActivity extends BaseActivity implements MatrimonyView {
-
+public class JobsActivity extends BaseActivity implements JobsView {
 
     @Inject
-    MatrimonyPresenter<MatrimonyView> mPresenter;
+    JobsPresenter<JobsView> mPresenter;
 
     @BindView(R.id.mToolBar)
     public Toolbar mToolbar;
@@ -32,13 +31,13 @@ public class MatrimonyActivity extends BaseActivity implements MatrimonyView {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_matrimony);
+        setContentView(R.layout.activity_jobs);
 
         getActivityComponent().inject(this);
 
         setUnBinder(ButterKnife.bind(this));
 
-        mPresenter.onAttach(MatrimonyActivity.this);
+        mPresenter.onAttach(JobsActivity.this);
 
         setSupportActionBar(mToolbar);
 

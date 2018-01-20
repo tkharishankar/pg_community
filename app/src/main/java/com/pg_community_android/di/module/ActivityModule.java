@@ -6,9 +6,15 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.pg_community_android.di.ActivityContext;
 import com.pg_community_android.di.PerActivity;
+import com.pg_community_android.functionalities.jobs.JobsPresenter;
+import com.pg_community_android.functionalities.jobs.JobsPresenterImpl;
+import com.pg_community_android.functionalities.jobs.JobsView;
 import com.pg_community_android.functionalities.login.LoginPresenter;
 import com.pg_community_android.functionalities.login.LoginPresenterImpl;
 import com.pg_community_android.functionalities.login.LoginView;
+import com.pg_community_android.functionalities.matrimony.MatrimonyPresenter;
+import com.pg_community_android.functionalities.matrimony.MatrimonyPresenterImpl;
+import com.pg_community_android.functionalities.matrimony.MatrimonyView;
 import com.pg_community_android.functionalities.profile.ProfilePresenter;
 import com.pg_community_android.functionalities.profile.ProfilePresenterImpl;
 import com.pg_community_android.functionalities.profile.ProfileView;
@@ -71,6 +77,20 @@ public class ActivityModule {
     @PerActivity
     ProfilePresenter<ProfileView> provideProfilePresenter(
             ProfilePresenterImpl<ProfileView> presenter) {
+        return presenter;
+    }
+
+    @Provides
+    @PerActivity
+    JobsPresenter<JobsView> provideJobsPresenter(
+            JobsPresenterImpl<JobsView> presenter) {
+        return presenter;
+    }
+
+    @Provides
+    @PerActivity
+    MatrimonyPresenter<MatrimonyView> provideMatrimonyPresenter(
+            MatrimonyPresenterImpl<MatrimonyView> presenter) {
         return presenter;
     }
 

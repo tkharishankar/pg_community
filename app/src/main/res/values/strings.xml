@@ -6,6 +6,7 @@
     <string name="title_login">Login</string>
     <string name="title_register">Register</string>
     <string name="title_profile">Profile</string>
+    <string name="title_matrimony">Matrimony</string>
     <string name="title_welcome">Welcome</string>
 
     <!--App Message-->
@@ -56,6 +57,7 @@
     <string name="home">home</string>
     <string name="about">About</string>
     <string name="matrimony">Matrimony</string>
+    <string name="jobs">Jobs</string>
     <string name="logout">Logout</string>
 
 </resources>

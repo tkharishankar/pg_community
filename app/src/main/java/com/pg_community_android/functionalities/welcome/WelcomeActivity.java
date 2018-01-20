@@ -13,6 +13,8 @@ import android.widget.TextView;
 import com.pg_community_android.R;
 import com.pg_community_android.functionalities.home.HomeActivity;
 import com.pg_community_android.functionalities.home.PgMenuAdapter;
+import com.pg_community_android.functionalities.jobs.JobsActivity;
+import com.pg_community_android.functionalities.matrimony.MatrimonyActivity;
 import com.pg_community_android.functionalities.profile.ProfileActivity;
 
 import butterknife.BindView;
@@ -127,8 +129,21 @@ public class WelcomeActivity extends HomeActivity {
         }
 
         @Override
+        public void jobs() {
+            closeNavigationDrawer();
+            Intent intent = new Intent(WelcomeActivity.this, JobsActivity.class);
+            startActivity(intent);
+            overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+        }
+
+        @Override
         public void matrimony() {
             //TODO : go to about screen
+
+            closeNavigationDrawer();
+            Intent intent = new Intent(WelcomeActivity.this, MatrimonyActivity.class);
+            startActivity(intent);
+            overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         }
 
         @Override

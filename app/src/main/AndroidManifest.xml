@@ -36,5 +36,13 @@
             android:name=".functionalities.profile.ProfileActivity"
             android:configChanges="orientation|keyboard|keyboardHidden|navigation|screenSize" />
 
+        <activity
+            android:name=".functionalities.jobs.JobsActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation|screenSize" />
+
+        <activity
+            android:name=".functionalities.matrimony.MatrimonyActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation|screenSize" />
+
     </application>
 </manifest>

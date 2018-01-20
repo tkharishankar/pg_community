@@ -7,4 +7,6 @@ import com.pg_community_android.base.CommonView;
  */
 
 public interface JobsView extends CommonView {
+    public interface AdapterCallBack {
+    }
 }

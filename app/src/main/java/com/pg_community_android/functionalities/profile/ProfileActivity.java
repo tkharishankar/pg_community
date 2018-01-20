@@ -91,7 +91,8 @@ public class ProfileActivity extends BaseActivity implements ProfileView {
     @Override
     public boolean onOptionsItemSelected(MenuItem menuItem) {
         if (menuItem.getItemId() == android.R.id.home) {
-            onBackPressed();
+            finish();
+            overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         }
         return super.onOptionsItemSelected(menuItem);
     }

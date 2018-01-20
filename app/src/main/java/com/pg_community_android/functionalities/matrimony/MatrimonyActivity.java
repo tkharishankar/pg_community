@@ -2,6 +2,7 @@ package com.pg_community_android.functionalities.matrimony;
 
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 
 import com.pg_community_android.R;
 import com.pg_community_android.base.BaseActivity;
@@ -48,5 +49,14 @@ public class MatrimonyActivity extends BaseActivity implements MatrimonyView {
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        if (menuItem.getItemId() == android.R.id.home) {
+            finish();
+            overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+        }
+        return super.onOptionsItemSelected(menuItem);
     }
 }

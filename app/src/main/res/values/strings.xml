@@ -7,6 +7,8 @@
     <string name="title_register">Register</string>
     <string name="title_profile">Profile</string>
     <string name="title_matrimony">Matrimony</string>
+    <string name="title_jobs">Jobs</string>
+    <string name="title_add_jobs">Add Jobs</string>
     <string name="title_welcome">Welcome</string>
 
     <!--App Message-->
@@ -51,6 +53,16 @@
     <string name="current_country">Current country</string>
     <string name="action_save">Save</string>
 
+    <string-array name="job_types">
+        <item>Referral</item>
+        <item>Forwarded</item>
+        <item>Others</item>
+    </string-array>
+    <string name="job_from">Job from:</string>
+    <string name="job_name">Job name:</string>
+    <string name="job_description">Job Description:</string>
+    <string name="job_contact_number">Contact person mobile no:</string>
+    <string name="job_contact_mail">Contact person mail-id:</string>
 
 
     <string name="version">Version:</string>

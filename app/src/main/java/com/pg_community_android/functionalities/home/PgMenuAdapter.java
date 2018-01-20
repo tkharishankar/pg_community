@@ -1,4 +1,4 @@
-package com.pg_community_android.functionalities;
+package com.pg_community_android.functionalities.home;
 
 import android.content.Context;
 import android.support.annotation.NonNull;

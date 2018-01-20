@@ -1,19 +1,13 @@
 package com.pg_community_android.functionalities.profile;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import com.pg_community_android.R;
-import com.pg_community_android.functionalities.HomeActivity;
-import com.pg_community_android.functionalities.PgMenuAdapter;
+import com.pg_community_android.base.BaseActivity;
 
 import javax.inject.Inject;
 
@@ -24,7 +18,7 @@ import butterknife.ButterKnife;
  * Created by Hari on 1/16/18.
  */
 
-public class ProfileActivity extends HomeActivity implements ProfileView {
+public class ProfileActivity extends BaseActivity implements ProfileView {
 
     @Inject
     ProfilePresenter<ProfileView> mPresenter;
@@ -59,30 +53,13 @@ public class ProfileActivity extends HomeActivity implements ProfileView {
     @BindView(R.id.profile_layout)
     LinearLayout mProfilelayout;
 
-    @BindView(R.id.drawer_layout)
-    public DrawerLayout mDrawerLayout;
-
-    private Menu mMenu;
-
-    @BindView(R.id.menu_recycler)
-    public RecyclerView mRecyclerDrawer;
-
-    @BindView(R.id.titleTextView)
-    public TextView mTxtVersion;
-
-    @BindView(R.id.profileNameTextView)
-    public TextView mTxtDriverName;
-
-    @BindView(R.id.profileContactNumberTextView)
-    public TextView profileContactNumberTextView;
-
     @BindView(R.id.mToolBar)
     public Toolbar mToolbar;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.drawer_home);
+        setContentView(R.layout.activity_profile);
 
         getActivityComponent().inject(this);
 
@@ -94,14 +71,20 @@ public class ProfileActivity extends HomeActivity implements ProfileView {
 
         getSupportActionBar().setTitle(getResources().getString(R.string.title_profile));
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
         populateProfileInfo();
 
         disableView();
 
-        enableView();
+        hideKeyboard();
 
-        initNavigationDrawer();
+    }
 
+    @Override
+    protected void setUp() {
     }
 
 
@@ -125,10 +108,6 @@ public class ProfileActivity extends HomeActivity implements ProfileView {
         mCurrentCountryEditText.setText("UAE");
     }
 
-    @Override
-    protected void setUp() {
-
-    }
 
     private void disableView() {
         mNameEditText.setHintTextColor(getResources().getColor(R.color.colorAccent));
@@ -172,63 +151,4 @@ public class ProfileActivity extends HomeActivity implements ProfileView {
         mCurrentCountryEditText.setEnabled(true);
     }
 
-    @NonNull
-    @Override
-    protected RecyclerView providerRecyclerViewDrawer() {
-        return mRecyclerDrawer;
-    }
-
-    @NonNull
-    @Override
-    protected TextView provideTextViewDriverName() {
-        return mTxtDriverName;
-    }
-
-    @NonNull
-    @Override
-    protected TextView provideTextViewVersion() {
-        return mTxtVersion;
-    }
-
-    @NonNull
-    @Override
-    protected TextView provideprofileContactNumberTextView() {
-        return profileContactNumberTextView;
-    }
-
-    @NonNull
-    @Override
-    protected DrawerLayout provideDrawerLayout() {
-        return mDrawerLayout;
-    }
-
-    @NonNull
-    @Override
-    protected Toolbar provideToolbar() {
-        return mToolbar;
-    }
-
-
-    @NonNull
-    @Override
-    protected RecyclerView.Adapter provideMenuAdapter() {
-        return new PgMenuAdapter(this, mMenuAdapterCallback);
-    }
-
-    private PgMenuAdapter.PgMenuAdapterCallBack mMenuAdapterCallback = new PgMenuAdapter.PgMenuAdapterCallBack() {
-        @Override
-        public void profile() {
-            closeNavigationDrawer();
-        }
-
-        @Override
-        public void matrimony() {
-            //TODO : go to about screen
-        }
-
-        @Override
-        public void logout() {
-
-        }
-    };
 }

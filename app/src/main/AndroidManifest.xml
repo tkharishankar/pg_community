@@ -25,6 +25,10 @@
         </activity>
 
         <activity
+            android:name=".functionalities.welcome.WelcomeActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation|screenSize" />
+
+        <activity
             android:name=".functionalities.register.RegisterActivity"
             android:configChanges="orientation|keyboard|keyboardHidden|navigation|screenSize" />
 

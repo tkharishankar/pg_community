@@ -6,6 +6,7 @@
     <string name="title_login">Login</string>
     <string name="title_register">Register</string>
     <string name="title_profile">Profile</string>
+    <string name="title_welcome">Welcome</string>
 
     <!--App Message-->
     <string name="api_retry_error">Please retry!</string>
@@ -14,6 +15,7 @@
     <string name="connection_error">Internet connection lost!</string>
     <string name="app_market_link">not yet</string>
     <string name="app_google_play_store_link">not yet</string>
+    <string name="app_welcome_page">Welcome...</string>
 
     <!--Login Page-->
     <string name="prompt_password">Enter your password</string>

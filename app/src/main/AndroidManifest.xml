@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".PgApplication"
@@ -25,11 +27,27 @@
         </activity>
 
         <activity
+            android:name=".functionalities.welcome.WelcomeActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation|screenSize" />
+
+        <activity
             android:name=".functionalities.register.RegisterActivity"
             android:configChanges="orientation|keyboard|keyboardHidden|navigation|screenSize" />
 
         <activity
             android:name=".functionalities.profile.ProfileActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation|screenSize" />
+
+        <activity
+            android:name=".functionalities.jobs.JobsActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation|screenSize" />
+
+        <activity
+            android:name=".functionalities.matrimony.MatrimonyActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation|screenSize" />
+
+        <activity
+            android:name=".functionalities.jobs.AddNewJobActivity"
             android:configChanges="orientation|keyboard|keyboardHidden|navigation|screenSize" />
 
     </application>

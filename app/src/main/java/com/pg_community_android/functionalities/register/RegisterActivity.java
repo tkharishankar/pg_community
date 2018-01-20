@@ -8,7 +8,7 @@ import android.widget.EditText;
 
 import com.pg_community_android.R;
 import com.pg_community_android.base.BaseActivity;
-import com.pg_community_android.functionalities.profile.ProfileActivity;
+import com.pg_community_android.functionalities.welcome.WelcomeActivity;
 
 import javax.inject.Inject;
 
@@ -66,7 +66,7 @@ public class RegisterActivity extends BaseActivity implements RegisterView {
                 mPasswordEditText.getText().toString().trim(),
                 mConfirmPasswordEditText.getText().toString().trim());
 
-        Intent intent = new Intent(this, ProfileActivity.class);
+        Intent intent = new Intent(this, WelcomeActivity.class);
         startActivity(intent);
         finish();
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);

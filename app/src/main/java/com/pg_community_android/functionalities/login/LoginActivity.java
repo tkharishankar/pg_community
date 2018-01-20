@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 import com.pg_community_android.R;
 import com.pg_community_android.base.BaseActivity;
-import com.pg_community_android.functionalities.register.RegisterActivity;
+import com.pg_community_android.functionalities.jobs.AddNewJobActivity;
 
 import javax.inject.Inject;
 
@@ -34,7 +34,7 @@ public class LoginActivity extends BaseActivity implements LoginView {
     public Toolbar mToolbar;
 
     public static Intent getStartIntent(Context context) {
-        Intent intent = new Intent(context, RegisterActivity.class);
+        Intent intent = new Intent(context, AddNewJobActivity.class);
         return intent;
     }
 
@@ -58,6 +58,9 @@ public class LoginActivity extends BaseActivity implements LoginView {
     void onServerLoginClick(View v) {
         mPresenter.onServerLoginClick(mEmailEditText.getText().toString(),
                 mPasswordEditText.getText().toString());
+        Intent intent = LoginActivity.getStartIntent(LoginActivity.this);
+        startActivity(intent);
+        finish();
     }
 
     @OnClick(R.id.sign_up_button)

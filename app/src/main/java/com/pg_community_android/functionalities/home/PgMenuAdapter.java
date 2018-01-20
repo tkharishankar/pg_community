@@ -1,4 +1,4 @@
-package com.pg_community_android.functionalities;
+package com.pg_community_android.functionalities.home;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -25,6 +25,9 @@ public class PgMenuAdapter extends MenuAdapter {
                         case R.string.logout:
                             mPgMenuAdapterCallBack.logout();
                             break;
+                        case R.string.jobs:
+                            mPgMenuAdapterCallBack.jobs();
+                            break;
                         case R.string.matrimony:
                             mPgMenuAdapterCallBack.matrimony();
                             break;
@@ -36,9 +39,11 @@ public class PgMenuAdapter extends MenuAdapter {
         super(context);
         mPgMenuAdapterCallBack = pgMenuAdapterCallBack;
         menuItems.put(R.drawable.ic_person_black_24dp, R.string.title_profile);
+        menuItems.put(R.drawable.ic_work_black_24dp, R.string.jobs);
         menuItems.put(R.drawable.ic_favorite_black_24dp, R.string.matrimony);
         menuItems.put(R.drawable.ic_lock_black_24px, R.string.logout);
         menuLogos.add(R.drawable.ic_person_black_24dp);
+        menuLogos.add(R.drawable.ic_work_black_24dp);
         menuLogos.add(R.drawable.ic_favorite_black_24dp);
         menuLogos.add(R.drawable.ic_lock_black_24px);
         setMenuAdapterCallBack(menuAdapterCallBack);
@@ -49,6 +54,8 @@ public class PgMenuAdapter extends MenuAdapter {
 
     public interface PgMenuAdapterCallBack {
         void profile();
+
+        void jobs();
 
         void matrimony();
 

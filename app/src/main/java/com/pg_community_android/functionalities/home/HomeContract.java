@@ -1,4 +1,4 @@
-package com.pg_community_android.functionalities;
+package com.pg_community_android.functionalities.home;
 
 /**
  * Created by Hari on 1/17/18.

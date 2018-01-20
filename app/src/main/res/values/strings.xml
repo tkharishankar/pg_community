@@ -38,6 +38,10 @@
     <string name="prompt_confirm_password">Confirm password</string>
     <string name="password">Password</string>
     <string name="email">Email</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="referredby">Referred by</string>
+
 
     <string name="empty_name">Please enter your name</string>
     <string name="empty_surname">Please enter your surname</string>
@@ -52,6 +56,13 @@
     <string name="current_state">Current state</string>
     <string name="current_country">Current country</string>
     <string name="action_save">Save</string>
+    <string name="student">Student</string>
+    <string name="employee">Employee</string>
+    <string name="college_name">College name</string>
+    <string name="degree_name">Degree</string>
+    <string name="company_name">Company name</string>
+    <string name="designation">Designation</string>
+    <string name="about_work">About Work Experience</string>
 
     <string-array name="job_types">
         <item>Referral</item>
@@ -64,7 +75,6 @@
     <string name="job_contact_number">Contact person mobile no:</string>
     <string name="job_contact_mail">Contact person mail-id:</string>
     <string name="job_select">Add Job Image</string>
-
 
     <string name="version">Version:</string>
     <string name="home">home</string>

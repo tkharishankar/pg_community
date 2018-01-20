@@ -20,7 +20,7 @@ import butterknife.OnClick;
  * Created by Hari on 12/5/17.
  */
 
-public class RegisterActivity extends BaseActivity implements RegisterView {
+public class RegisterActivity extends BaseActivity implements RegisterView{
 
     @Inject
     RegisterPresenter<RegisterView> mPresenter;
@@ -76,4 +76,6 @@ public class RegisterActivity extends BaseActivity implements RegisterView {
     protected void setUp() {
 
     }
+
+
 }

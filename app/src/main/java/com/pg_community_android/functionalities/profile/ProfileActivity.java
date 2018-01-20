@@ -3,22 +3,27 @@ package com.pg_community_android.functionalities.profile;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 
 import com.pg_community_android.R;
 import com.pg_community_android.base.BaseActivity;
+import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
+
+import java.util.Calendar;
 
 import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by Hari on 1/16/18.
  */
 
-public class ProfileActivity extends BaseActivity implements ProfileView {
+public class ProfileActivity extends BaseActivity implements ProfileView ,DatePickerDialog.OnDateSetListener {
 
     @Inject
     ProfilePresenter<ProfileView> mPresenter;
@@ -55,6 +60,11 @@ public class ProfileActivity extends BaseActivity implements ProfileView {
 
     @BindView(R.id.mToolBar)
     public Toolbar mToolbar;
+
+
+    @BindView(R.id.mBtnDate)
+    Button mBtnDate;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -150,6 +160,32 @@ public class ProfileActivity extends BaseActivity implements ProfileView {
         mCurrentCityEditText.setEnabled(true);
         mCurrentStateEditText.setEnabled(true);
         mCurrentCountryEditText.setEnabled(true);
+    }
+
+    @OnClick(R.id.mBtnDate)
+    public void onDatePickerClick() {
+
+        Calendar now = Calendar.getInstance();
+        DatePickerDialog datepickerdialog = DatePickerDialog.newInstance(
+                ProfileActivity.this,
+                now.get(Calendar.YEAR),
+                now.get(Calendar.MONTH),
+                now.get(Calendar.DAY_OF_MONTH)
+        );
+        datepickerdialog.setThemeDark(true); //set dark them for dialog?
+        datepickerdialog.vibrate(true); //vibrate on choosing date?
+        datepickerdialog.dismissOnPause(true); //dismiss dialog when onPause() called?
+        datepickerdialog.showYearPickerFirst(false); //choose year first?
+        datepickerdialog.setAccentColor(getResources().getColor(R.color.colorAccent)); // custom accent color
+        datepickerdialog.setTitle("Please select a date"); //dialog title
+        datepickerdialog.show(getFragmentManager(), "Datepickerdialog"); //show dialog
+
+    }
+
+    @Override
+    public void onDateSet(DatePickerDialog view, int year, int monthOfYear, int dayOfMonth) {
+        String date = dayOfMonth + "/" + (++monthOfYear) + "/" + year;
+        mBtnDate.setText(date);
     }
 
 }

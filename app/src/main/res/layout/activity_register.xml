@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical">
+
     <include
         android:id="@+id/mToolBar"
         layout="@layout/view_tool_bar"
@@ -19,7 +20,6 @@
         android:visibility="gone" />
 
 
-
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
@@ -27,10 +27,28 @@
 
         <LinearLayout
             android:id="@+id/email_login_form"
-            android:layout_margin="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mTxtReferredby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/referredby"
+                android:textColor="@color/pg_green"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/mSpnReferredby"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_green"
+                android:popupBackground="@color/white" />
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -114,6 +132,27 @@
                     android:singleLine="true" />
 
             </android.support.design.widget.TextInputLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/mRadmale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/male" />
+
+                <RadioButton
+                    android:id="@+id/mRadfemale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/female" />
+            </RadioGroup>
 
             <Button
                 android:id="@+id/register_button"

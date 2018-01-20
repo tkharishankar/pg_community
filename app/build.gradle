@@ -54,6 +54,7 @@ dependencies {
     compile "com.jakewharton:butterknife:$rootProject.butterKnifeVersion"
     annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterKnifeVersion"
 
+    compile 'com.wdullaer:materialdatetimepicker:2.3.0'
 
     testImplementation 'junit:junit:4.12'
 

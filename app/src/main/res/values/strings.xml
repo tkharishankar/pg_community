@@ -63,6 +63,7 @@
     <string name="job_description">Job Description:</string>
     <string name="job_contact_number">Contact person mobile no:</string>
     <string name="job_contact_mail">Contact person mail-id:</string>
+    <string name="job_select">Add Job Image</string>
 
 
     <string name="version">Version:</string>
